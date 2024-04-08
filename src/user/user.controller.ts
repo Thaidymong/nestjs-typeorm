@@ -12,7 +12,7 @@ export class UserController {
 
   @Get('all')
   findAll() {
-    return 'all user';
+    return this.userService.findAll();
   }
 
   @Get(':id')
